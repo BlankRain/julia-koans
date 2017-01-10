@@ -2,5 +2,9 @@
 using Base.Test
 x= _
 y= _
-@test x == 4+4
-@test "Hello, World"=="H$(y)ld"
+
+@testset "Variables Tests" begin
+          @test x == 4+4
+          @test "Hello, World"=="H$(y)ld"
+end
+
